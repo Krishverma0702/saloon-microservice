@@ -10,9 +10,9 @@ public interface UserService {
 
     List<User> getAllUsers();
 
-    User getUserById(int id) throws UserException;
+    User getUserById(Integer id) throws UserException;
 
-    void deleteUserById(int id) throws UserException;
+    void deleteUserById(Integer id) throws UserException;
 
-    User updateUser(int id, User user) throws UserException;
+    User updateUser(Integer id, User user) throws UserException;
 }

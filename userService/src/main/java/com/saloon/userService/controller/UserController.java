@@ -30,19 +30,19 @@ public class UserController {
     }
 
     @GetMapping("/api/users/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable("id") int id) throws Exception {
+    public ResponseEntity<User> getUserById(@PathVariable("id") Integer id) throws Exception {
         User user = userService.getUserById(id);
         return new ResponseEntity<>(user, HttpStatus.OK);
     }
 
     @PutMapping("/api/user/{id}")
-    public ResponseEntity<User> updateUser(@PathVariable("id") int id, @RequestBody User user) throws Exception {
+    public ResponseEntity<User> updateUser(@PathVariable("id") Integer id, @RequestBody User user) throws Exception {
         User updatedUser = userService.updateUser(id, user);
         return new ResponseEntity<>(updatedUser, HttpStatus.OK);
     }
 
     @DeleteMapping("/api/users/{id}")
-    public ResponseEntity<String> deleteUserById(@PathVariable("id") int id) throws Exception {
+    public ResponseEntity<String> deleteUserById(@PathVariable("id") Integer id) throws Exception {
         userService.deleteUserById(id);
 
         return new ResponseEntity<>("User deleted", HttpStatus.OK);

@@ -2,12 +2,12 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="saloonService" />
+        <module name="service-offering" />
         <module name="userService" />
         <module name="categoryService" />
       </profile>
@@ -17,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="categoryService" options="-parameters" />
       <module name="saloonService" options="-parameters" />
+      <module name="service-offering" options="-parameters" />
       <module name="userService" options="-parameters" />
     </option>
   </component>

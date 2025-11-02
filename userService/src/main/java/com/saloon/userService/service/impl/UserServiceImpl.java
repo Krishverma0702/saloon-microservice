@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User getUserById(int id) throws UserException {
+    public User getUserById(Integer id) throws UserException {
         Optional<User> byId = userRepository.findById(id);
 
         if (byId.isPresent()) {
@@ -37,7 +37,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void deleteUserById(int id) throws UserException {
+    public void deleteUserById(Integer id) throws UserException {
         Optional<User> byId = userRepository.findById(id);
         if (byId.isEmpty()) {
             throw new UserException("User not found with id" + id);
@@ -46,7 +46,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User updateUser(int id, User user) throws UserException {
+    public User updateUser(Integer id, User user) throws UserException {
         Optional<User> byId = userRepository.findById(id);
 
         if (byId.isEmpty()) {
