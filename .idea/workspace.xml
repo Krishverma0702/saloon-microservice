@@ -4,28 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73ae33e8-b78e-4299-8221-dc74288611db" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/controller/SaloonServiceOfferingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/controller/ServiceOfferingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/dto/CategoryDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/dto/SaloonDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/dto/ServiceDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/model/ServiceOffering.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/repository/ServiceOfferingRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/service/ServiceOfferingService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service-offering/src/main/java/com/saloon/service_offering/service/impl/ServiceOfferingServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+    <list default="true" id="62b0123f-a396-499e-a30b-e154eb4c601a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/domain/BookingStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/dto/BookingRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/dto/CategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/dto/SaloonDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/dto/SaloonReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/dto/ServiceDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/model/Booking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/repository/BookingRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/service/BookingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/booking-service/src/main/java/com/saloon/booking_service/service/impl/BookingServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/categoryService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/categoryService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/saloonService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/saloonService/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/saloon/userService/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/saloon/userService/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/saloon/userService/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/saloon/userService/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/saloon/userService/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/saloon/userService/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userService/src/main/java/com/saloon/userService/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/userService/src/main/java/com/saloon/userService/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/booking-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/booking-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +31,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -59,7 +56,7 @@
   "customColor": "",
   "associatedIndex": 5
 }]]></component>
-  <component name="ProjectId" id="34vQRFkkSjd4YkYHJjFEkalMj4J" />
+  <component name="ProjectId" id="34vufrIjX3UjPAIn6jQFETCWwU9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -71,21 +68,21 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "H:/My_Projects/Saloon_Application/microservice/service-offering/src/main/java/com/saloon/service_offering"
+    "last_opened_file_path": "H:/My_Projects/Saloon_Application/microservice/booking-service/src/main/java/com/saloon/booking_service"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\My_Projects\Saloon_Application\microservice\service-offering\src\main\java\com\saloon\service_offering" />
+      <recent name="H:\My_Projects\Saloon_Application\microservice\booking-service\src\main\java\com\saloon\booking_service" />
     </key>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="73ae33e8-b78e-4299-8221-dc74288611db" name="Changes" comment="" />
-      <created>1762091558756</created>
+      <changelist id="62b0123f-a396-499e-a30b-e154eb4c601a" name="Changes" comment="" />
+      <created>1762106477804</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1762091558756</updated>
+      <updated>1762106477804</updated>
     </task>
     <servers />
   </component>
