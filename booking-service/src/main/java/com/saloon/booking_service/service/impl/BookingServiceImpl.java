@@ -84,7 +84,7 @@ public class BookingServiceImpl implements BookingService {
     }
 
     @Override
-    public Booking getBookingId(Integer id) throws Exception {
+    public Booking getBookingById(Integer id) throws Exception {
         Booking booking = bookingRepository.findById(id).orElse(null);
 
         if (booking == null) {
@@ -96,7 +96,7 @@ public class BookingServiceImpl implements BookingService {
     @Override
     public Booking updateBooking(Integer bookingId, BookingStatus status) throws Exception {
 
-        Booking booking = getBookingId(bookingId);
+        Booking booking = getBookingById(bookingId);
 
         booking.setStatus(status);
         return bookingRepository.save(booking);
@@ -127,6 +127,17 @@ public class BookingServiceImpl implements BookingService {
         int totalEarnings = bookings.stream().mapToInt(Booking::getTotalPrice).sum();
 
         Integer totalBooking = bookings.size();
-        return null;
+
+        List<Booking> cancelledBookings = bookings.stream().filter(booking -> booking.getStatus().equals(BookingStatus.CANCELLED)).collect(Collectors.toList());
+
+        Double totalRefund = cancelledBookings.stream().mapToDouble(Booking::getTotalPrice).sum();
+
+        SaloonReport report = new SaloonReport();
+        report.setSaloonId(saloonId);
+        report.setCancelledBookings(cancelledBookings.size());
+        report.setTotalBookings(totalBooking);
+        report.setTotalEarnings(totalEarnings);
+        report.setTotalRefund(totalRefund);
+        return report;
     }
 }

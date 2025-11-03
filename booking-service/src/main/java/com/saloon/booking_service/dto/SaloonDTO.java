@@ -1,6 +1,4 @@
 package com.saloon.booking_service.dto;
-
-import com.saloon.service_offering.dto.UserDTO;
 import lombok.Data;
 
 import java.time.LocalTime;

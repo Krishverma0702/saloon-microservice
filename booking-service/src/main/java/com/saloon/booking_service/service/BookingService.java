@@ -16,7 +16,7 @@ public interface BookingService {
 
     List<Booking> getBookingsBySaloon(Integer saloonId) throws Exception;
 
-    Booking getBookingId(Integer id) throws Exception;
+    Booking getBookingById(Integer id) throws Exception;
 
     Booking updateBooking(Integer bookingId, BookingStatus status) throws Exception;
 
