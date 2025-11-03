@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,13 +12,14 @@
         <module name="userService" />
         <module name="categoryService" />
       </profile>
-      <profile name="Annotation profile for booking-service" enabled="true">
+      <profile name="Annotation profile for payment-service" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
         </processorPath>
+        <module name="payment-service" />
         <module name="booking-service" />
       </profile>
     </annotationProcessing>
@@ -26,6 +28,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="booking-service" options="-parameters" />
       <module name="categoryService" options="-parameters" />
+      <module name="payment-service" options="-parameters" />
       <module name="saloonService" options="-parameters" />
       <module name="service-offering" options="-parameters" />
       <module name="userService" options="-parameters" />
